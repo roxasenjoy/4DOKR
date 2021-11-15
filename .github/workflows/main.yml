@@ -13,12 +13,12 @@ jobs:
         name: Login to DockerHub
         uses: docker/login-action@v1 
         with:
-          username: %USERNAME_GITHUB%
-          password: ${{ secrets.%SECRET_DOCKER_TOKEN% }}
+          username: roxasenjoy
+          password: ${{ secrets.DOCKER_COURS }}
       -
         name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: %dockerhub_username%/%image_name%:latest
+          tags: roxasenjoy/wpcopy:latest
