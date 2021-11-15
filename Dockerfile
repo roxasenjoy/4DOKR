@@ -1,5 +1,5 @@
 FROM ubuntu
-LABEL key="Andrew MAH (andrew.mahe@supinfo.com)"
+LABEL key="Andrew MAHE (andrew.mahe@supinfo.com)"
 
 EXPOSE 3306
 
